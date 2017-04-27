@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Reprograma - Reprogramando o mundo</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="estilo/style.css">
+	<link rel="icon" type="image/x-icon" href="imgs/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="estilo/font-awesome.css">
+	<meta name="viewport" content="width=device-width, user-scalable=no"> <!-- digitar meta vierport no google e pegar o link-->
+</head>
+<body>
+
+	<!-- MENU HORIZONTAL -->
+
+	<header id="cabecalho">
+		<div class="container linha espacoEntre alinharVertical">
+
+		<!-- o menu hamburguer é um botão (necessário fazer o botão), não um sideBar -->
+		<button class="botao menuHamburguer"><i class="fa fa-bars" aria-hidden="true"></i></button>
+
+			<nav class="menuHorizontal" id="navegacaoPrimaria">
+				<ul class="linha">
+					<li><a href="#" target="_blank" title="Home">Home</a></li>
+					<li><a href="#" target="_blank" title="Contato">Contato</a></li>
+					<li><a href="#" target="_blank" title="Quem somos">Quem somos</a></li>
+				</ul>
+			</nav>
+
+			<nav class="menuHorizontal" id="navegacaoMidiasSociais">
+				<ul class="linha">
+					<li> <a href="www.facebook.com.br"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+					<li> <a href="www.twitter.com.br"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+					<li> <a href="www.instagram.com.br"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<!-- FIM MENU HORIZONTAL -->
+
+	<!-- BANNER -->
+
+	<section id="banner">
+		<div class="container centralizador">
+			<div id="slogan">
+				<h1> Reprograma </h1>
+				<h2> Vamos reprogramar o mundo! </h2>
+			</div>
+		</div>
+	</section>
+
+	<!-- FIM BANNER-->
+
+	<!-- VALORES -->
+
+	<main id="valores">
+		<div class="container">
+			
+			<div class="cardContainer linha">
+				<!--CARDS -->
+				<div class="card">
+					<img src="imgs/foco.svg" alt="#">
+					<div class="textos">
+					<h3>FOCO</h3>
+					<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua.</p>
+					</div>
+					<div class="botoes linha">
+						<button class="botao detalhe">Detalhe<i class="fa"></i></button>
+						<button class="botao amei">
+							<span>Amei</span> <!-- span é display inline, div é display block -->
+							<i class="fa fa-heart"></i></button>
+					</div>
+				</div>
+
+				<div class="card">
+					<img src="imgs/forca.svg" alt="#">
+					<div class="textos">
+						<h3>FORÇA</h3>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua.
+						</p>
+					</div>
+					<div class="botoes linha">
+						<button class="botao detalhe">Detalhe<i class="fa"></i></button>
+						<button class="botao amei">
+							<span>Amei</span>
+							<i class="fa fa-heart"></i></button>
+					</div>
+				</div>
+
+				<div class="card">
+					<img src="imgs/fe.svg" alt="#">
+					<div class="textos">
+						<h3>FÉ</h3>
+						<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua.</p>
+					</div>
+					<div class="botoes linha">
+						<button class="botao detalhe">Detalhe<i class="fa"></i></button>
+						<button class="botao amei">
+							<span>Amei</span>
+							<i class="fa fa-heart"></i>
+						</button>
+					</div>
+				</div>
+			</div>	
+
+		</div>
+	</main>
+
+	<!-- FIM VALORES -->
+</body>
+</html>

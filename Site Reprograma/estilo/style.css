@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+/* Digitar no google (google font) e selecionar a fonte STANDARD (colocar o link no html) e @IMPORT(colocar o link no css)*/
+/* Para baixar a pasta dos icones: http://fontawesome.io/; Ou escrever CDN FONT-AWESOME(google)*/
+
+/* ESTILOS PADROES */ 
+*{
+	color: #292929;
+	box-sizing: border-box;
+}
+
+body{
+	margin: 0;
+	font-family:"Open Sans";
+}
+
+.container{
+	width: 1140px;
+	margin: 0 auto;
+}
+
+.linha{
+	display: flex;
+}
+
+	.linha.espacoEntre{
+	justify-content: space-between;
+}
+
+	.linha.alinharVertical{
+		align-items: center;
+	}
+
+/* todo o h1 não terá margim top - first-child é o primeiro filho*/
+	h1:first-child{
+	margin-top: 0px;
+} 
+
+a{
+	text-decoration: none; /*tirar o sublinhado do link*/
+}
+
+ul{
+	list-style-type: none; /* tirar os botoes da ul*/
+}
+
+.centralizador{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.botao{
+	font-size: 15px; /*aumentar a letra do botão*/
+	font-weight: bold;
+	padding: 7px 13px;
+	background: white;
+	border: solid 1px #CCC;
+	border-radius: 16px;
+	margin: 10px;
+	cursor: pointer; /* muda o cursor ao passar por cima do elemento*/
+}
+
+.botao .fa{
+	margin-left: 5px;
+}
+.botao .fa:only-child{ /* only-child considerado como único, sozinho)*/
+	margin-left: 0px;
+}
+
+.botao.amei{
+	background: purple;
+	color: white;
+}
+
+.botao.amei span,
+.botao.amei .fa{
+	color: rgba(255, 255, 255, 0.92);
+}
+
+body section;
+body main;{
+	padding-top: 20px;
+}
+
+/* FIM ESTILOS PADROES */ 
+
+/* CABEÇALHO*/
+
+#cabecalho{
+	width: 100%;
+	background-color: purple;
+	position: fixed; /*Torna a tag fixa */
+	top: 0px;
+	left: 0px;
+}
+
+#cabecalho a{
+	color: white;
+}
+
+#cabecalho .container{
+	height: 40px;
+}
+
+#cabecalho i{
+	color:white;
+}
+
+.menuHorizontal ul{
+	margin: 0;
+	padding: 0;
+}
+
+.menuHorizontal a{
+	padding: 0 10px;
+}
+
+.botao.menuHamburguer{
+	background: none;
+	display: none;
+}
+/*FIM CABEÇALHO*/
+
+/*BANNER*/
+
+
+#banner{
+	background-image: url(../imgs/banner_background.jpg);
+	background-size: cover; /* faz com que a img ocupe(aumente) toda o espaço sem mudar a configuração da img*/
+	padding-top: 0px;
+}
+
+
+#banner .container{
+	height:100vh;
+}
+
+#slogan *{ /* o * determina que tudo o que está dentro do slogan(no caso h1 e h2) terá as propriedades determinadas */ 
+	color: white;
+}
+
+#slogan h1{
+	height: 81px;
+	width: 500px;
+	background: url(../imgs/logo.png) no-repeat;
+	overflow: hidden; /* faz com que o conteudo que está ultrapassado o limite se torne invisivel*/
+	text-indent:-99999999px; /* faz com que o texto desapareça - indentar o texto - */
+}
+
+#slogan h2{
+	text-align: center;
+}
+
+/*FIM BANNER*/
+
+/*VALORES*/
+
+.card{
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center; /* todo o texto adicionado no card se tornará centralizado.*/
+}
+
+.card img{
+	height: 200px;
+}
+/*FIM VALORES*/
+
+/*TABLET*/
+
+@media (max-width: 1140px){
+	.container{
+		width: 700px;
+	}
+	#navegacaoPrimaria{
+		display: none;
+	}	
+
+	.botao.menuHamburguer{
+		display: block;
+	}
+	.card{
+		width: 50%;
+	}
+	.cardContainer{
+		flex-wrap: wrap;
+	}
+
+	}
+
+/*FIM TABLET*/
+
+/*SMARTPHONE*/
+@media (max-width: 700px){
+	.container{
+		width: 100%;
+	}
+	#slogan h1{
+		width: 300px;
+		background-size: contain; /* Contain mostra toda a img no espaço que é determidado, sem distorcer e sem cortar. */
+		margin: auto;	
+	}
+
+}
+
+/*FIM SMARTPHONE*/
